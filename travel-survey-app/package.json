@@ -1,0 +1,28 @@
+{
+  "name": "travel-survey-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^7.3.1",
+    "@tailwindcss/postcss": "^4.1.11",
+    "framer-motion": "^10.18.0",
+    "lucide-react": "^0.263.1",
+    "next": "^15.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "stripe": "^18.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@netlify/next": "^1.4.9",
+    "@netlify/plugin-nextjs": "^5.11.4",
+    "@types/node": "24.0.12",
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}
