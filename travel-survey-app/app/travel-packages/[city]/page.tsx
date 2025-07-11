@@ -55,7 +55,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isVisible, onClose, onLoginSucc
     }
 
     try {
-      const flaskApiUrl = process.env.NEXT_PUBLIC_FLASK_API_URL || "http://mominaabid.pythonanywhere.com";
+      const flaskApiUrl = process.env.NEXT_PUBLIC_FLASK_API_URL || "https://mominaabid.pythonanywhere.com";
       const response = await fetch(`${flaskApiUrl}/api/login`, {
         method: "POST",
         headers: {
