@@ -2,22 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-/* General Body and HTML Styles */
+/* Global Body */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Loader Animation Styles */
+/* SVG loader animations */
 .svg-calLoader {
   width: 230px;
   height: 230px;
@@ -52,7 +53,7 @@ html {
   }
 }
 
-/* Theme Colors using CSS Variables */
+/* 🌈 Design Tokens and Color Variables */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -108,8 +109,16 @@ html {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
 
+/* ✅ Base Element Styling */
+@layer base {
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  * {
+    border-color: hsl(var(--border));
   }
 }

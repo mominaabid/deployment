@@ -5,24 +5,41 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@stripe/stripe-js": "^7.3.1",
-    "@tailwindcss/postcss": "^4.1.11",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.263.1",
     "next": "^15.2.1",
+    "next-auth": "^4.24.11",
     "react": "^18.3.1",
+    "react-date-range": "^2.0.1",
+    "react-datepicker": "^7.6.0",
     "react-dom": "^18.3.1",
-    "stripe": "^18.3.0",
+    "react-icons": "^5.4.0",
+    "react-markdown": "^10.1.0",
+    "react-parallax": "^3.5.1",
+    "strip": "^3.0.0",
+    "stripe": "^18.2.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@netlify/next": "^1.4.9",
-    "@netlify/plugin-nextjs": "^5.11.4",
-    "@types/node": "24.0.12",
-    "@types/react": "19.1.8",
+    "@eslint/eslintrc": "^3.0.0",
+    "@shadcn/ui": "^0.0.4",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "20.17.30",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.1.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
     "typescript": "5.8.3"
   }
 }
